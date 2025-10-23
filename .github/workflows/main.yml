@@ -1,0 +1,9 @@
+name: keepalive
+on:
+  schedule:
+    - cron: "0 3 * * *"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "keep active"
